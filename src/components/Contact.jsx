@@ -12,7 +12,7 @@ const Contact = () => {
             Contact
           </p>
           <p className="text-[#efefef] py-4">
-            // Submit the form below or shoot me an email -
+            Submit the form below or shoot me an email -
             joaquinabuin@gmail.com
           </p>
         </div>
