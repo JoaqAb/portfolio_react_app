@@ -100,12 +100,12 @@ const Navbar = () => {
                 <FaGithub size={30} />
               </Link>
             </a>
-            <a href="">
+            <a href="/">
               <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
                 <HiOutlineMail size={30} />
               </Link>
             </a>
-            <a href="">
+            <a href="/">
               <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
                 <BsFillPersonLinesFill size={30} />
               </Link>

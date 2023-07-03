@@ -6,7 +6,6 @@ const Home = () => {
   const [showFirstSection, setShowFirstSection] = useState(false);
   const [showSecondSection, setShowSecondSection] = useState(false);
   const [showThirdSection, setShowThirdSection] = useState(false);
-  const [showLastParagraph, setShowLastParagraph] = useState(false);
 
   const handleSecondTypingDone = () => {
     setShowThirdSection(true);
