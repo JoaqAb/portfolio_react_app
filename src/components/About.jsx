@@ -15,7 +15,7 @@ const About = () => {
 
             <div className='max-w-[1000px] w-full md:w-4/5 grid sm:grid-cols-2 gap-8 px-4'>
                 <div className='flex justify-center items-center'>
-                    <img className='w-80 rounded-full border-4 border-[#01c4e7]' src={Profile} alt="" />
+                    <img className='w-60 max-w-80 rounded-full border-4 border-[#01c4e7]' src={Profile} alt="" />
                 </div>
                 <div>
                     <p>"Hello! I'm a web developer based in Argentina with a strong passion for learning and growing in the field. 

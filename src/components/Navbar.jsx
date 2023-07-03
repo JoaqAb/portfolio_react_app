@@ -11,13 +11,13 @@ const Navbar = () => {
 
   return (
     
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#000020] text-[#efefef]">
-      <div>
+    <div className="fixed w-full h-[80px] flex justify-between items-center bg-[#000020] text-[#efefef]">
+      <div className="p-4">
         <img src={Logo} alt="Logo" style={{ width: 100 }} />
       </div>
 
       {/* Menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex p-4">
         <li>
           <Link to="home" smooth={true} duration={500}>
             Home
@@ -46,7 +46,7 @@ const Navbar = () => {
       </ul>
 
       {/* Hamburguer */}
-      <div onClick={handClick} className="md:hidden z-10">
+      <div onClick={handClick} className="md:hidden z-10 p-6">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -55,30 +55,30 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#000020] flex flex-col justify-center items-center"
+            : "absolute top-20 w-full bg-white/10 backdrop-blur-2xl rounded flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
+        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
           <Link onClick={handClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
           <Link onClick={handClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
           <Link onClick={handClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
           <Link onClick={handClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
           <Link onClick={handClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
       <div className="fixed w-full bottom-2 lg:bottom-8 overflow-hidden z-50">
         <div className="container mx-auto">
           <div className="w-full bg-white/20 h-[56px] backdrop-blur-2xl rounded-full max-w-[260px]
-          mx-auto flex justify-between items-center text-2xl text-[#01c4e7]">
+          mx-auto px-3 flex justify-between items-center text-2xl text-[#01c4e7]">
             <a href="https://www.linkedin.com/in/joaquin-abuin-31940092/">
               <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
                 <FaLinkedin size={30} />

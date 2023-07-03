@@ -8,6 +8,8 @@
 @layer base {
     body {
         @apply font-[Raleway];
+        background-color: #000020;
+        padding-bottom: 100px;
     }
     li {
         @apply px-4;
