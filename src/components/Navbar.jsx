@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-
-} from "react-icons/fa";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
@@ -16,6 +10,7 @@ const Navbar = () => {
   const handClick = () => setNav(!nav);
 
   return (
+    
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#000020] text-[#efefef]">
       <div>
         <img src={Logo} alt="Logo" style={{ width: 100 }} />
@@ -89,44 +84,36 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-
+        
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
-        <ul>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0077b5]">
-            <a
-              className="flex justify-between items-center w-full text-[#efefef]"
-              href="/"
-            >
-              Linkedin <FaLinkedin size={30} />
+      <div className="fixed w-full bottom-2 lg:bottom-8 overflow-hidden z-50">
+        <div className="container mx-auto">
+          <div className="w-full bg-white/20 h-[56px] backdrop-blur-2xl rounded-full max-w-[260px]
+          mx-auto flex justify-between items-center text-2xl text-[#01c4e7]">
+            <a href="https://www.linkedin.com/in/joaquin-abuin-31940092/">
+              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
+                <FaLinkedin size={30} />
+              </Link>
             </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#171515]">
-            <a
-              className="flex justify-between items-center w-full text-[#efefef]"
-              href="/"
-            >
-              Github <FaGithub size={30} />
+            <a href="https://github.com/JoaqAb">
+              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
+                <FaGithub size={30} />
+              </Link>
             </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#ea4335]">
-            <a
-              className="flex justify-between items-center w-full text-[#efefef]"
-              href="/"
-            >
-              Email <HiOutlineMail size={30} />
+            <a href="">
+              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
+                <HiOutlineMail size={30} />
+              </Link>
             </a>
-          </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600">
-            <a
-              className="flex justify-between items-center w-full text-[#efefef]"
-              href="/"
-            >
-              Resume <BsFillPersonLinesFill size={30} />
+            <a href="">
+              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
+                <BsFillPersonLinesFill size={30} />
+              </Link>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
+
     </div>
   );
 };
