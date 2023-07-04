@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { TypeAnimation } from "react-type-animation";
-import "animate.css";
+import React, { useState, useEffect } from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import 'animate.css';
 
 const Home = () => {
   const [showFirstSection, setShowFirstSection] = useState(false);
@@ -9,10 +9,6 @@ const Home = () => {
 
   const handleSecondTypingDone = () => {
     setShowThirdSection(true);
-  };
-
-  const handleThirdTypingDone = () => {
-    setShowLastParagraph(true);
   };
 
   useEffect(() => {
@@ -57,20 +53,18 @@ const Home = () => {
         )}
         {showThirdSection && (
           <TypeAnimation
-            className="text-4xl sm-text-7xl font-bold text-[#8c8c8c]"
+            className="text-4xl sm-text-7xl font-bold text-[#efefef]"
             sequence={["I'm a Full Stack Developer"]}
             cursor={false}
-            onTypingDone={handleThirdTypingDone}
           />
         )}
-        <div class="animate__animated animate__fadeInUp animate__delay-5s" >
-          <p className="text-[#8c8c8c] py-4 max-w-[700px]">
+        <div className="animate__animated animate__fadeInUp animate__delay-5s">
+          <p className="text-[#efefef] py-4 max-w-[700px]">
             Welcome to my world of web development. I'm a passionate programmer
             and web developer. I'm excited to share my knowledge and skills with
             you!
           </p>
         </div>
-       
       </div>
     </div>
   );
