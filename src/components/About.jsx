@@ -1,14 +1,10 @@
 import React from 'react';
 import Profile from '../assets/joa_pic.webp'
-import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 
 
 const About = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.5,
-    });
   return (
     
     <div className='w-full h-screen bg-[#000020] text-[#efefef]'>
