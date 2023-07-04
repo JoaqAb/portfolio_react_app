@@ -20,7 +20,7 @@ const About = () => {
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.3}}
                 className='pb-8'>
-                    <p className='text-4xl font-bold inline border-b-4 border-[#01c4e7]'>About</p>
+                     <p style={{ textShadow: '2px 2px 4px #01c4e7' }} className="text-4xl font-bold inline text-[#efefef]">About</p>
                 </motion.div>
                 
                 <div></div>
@@ -28,7 +28,7 @@ const About = () => {
 
             <div className='max-w-[1000px] w-full md:w-4/5 grid sm:grid-cols-2 gap-8 px-4'>
                 <motion.div 
-                variants={fadeIn('right', 0.3)}
+                variants={fadeIn('opacity', 0.3)}
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{once: false, amount: 0.3}}
