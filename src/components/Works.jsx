@@ -1,6 +1,6 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../variants";
 import Web1 from "../assets/web_1.webp";
 import Web2 from "../assets/web_2.webp";
 import Web3 from "../assets/web_3.webp";
