@@ -13,7 +13,7 @@ const About = () => {
   return (
     <Element
       name="about"
-      className="w-4/5 h-screen bg-[#000020] text-[#efefef]"
+      className="md:w-full h-screen bg-[#000020] text-[#efefef] overflow-hidden"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] p-4 grid grid-cols-2 gap-8 w-full md:w-4/5">
