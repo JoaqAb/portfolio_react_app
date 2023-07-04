@@ -5,9 +5,8 @@ import { fadeIn } from '../variants'
 
 
 const About = () => {
-  return (
-    
-    <div className='w-full h-screen bg-[#000020] text-[#efefef]'>
+  return (    
+    <div name="about" className='w-full h-screen bg-[#000020] text-[#efefef]'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px]  p-4 grid grid-cols-2 gap-8 w-full md:w-4/5'>
                 <motion.div 
