@@ -59,7 +59,7 @@ const Home = () => {
           />
         )}
         <div className="animate__animated animate__fadeInUp animate__delay-5s">
-          <p className="text-[#efefef] py-4 max-w-[700px]">
+          <p className="text-[#efefef] py-4 max-w-[530px]">
             Welcome to my world of web development. I'm a passionate programmer
             and web developer. I'm excited to share my knowledge and skills with
             you!
