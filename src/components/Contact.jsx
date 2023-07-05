@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div name="contact" className="w-full min-h-screen bg-[#000020] text-[#efefef] mb-16 flex justify-center items-center">
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full md:w-4/5 overflow-hidden'>
-        <div className="container ">
+        <div className="w-full">
           <div className="flex flex-col lg:flex-row">
             <div className="flex-1 mb-8">
               <motion.div
