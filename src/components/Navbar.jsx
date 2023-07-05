@@ -24,39 +24,28 @@ const Navbar = () => {
   }, []);
 
   return (
-    
     <div className="fixed w-screen h-[80px] z-50 flex justify-between items-center bg-[#000020] text-[#efefef]">
-      <div className="p-4">
+      <div className="p-8 pt-10">
         <img src={Logo} alt="Logo" style={{ width: 100 }} />
       </div>
 
       {/* Menu */}
-      <ul className="hidden md:flex p-4">
-        <li className="hover:text-[#01c4e7] hover:scale-110">
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="hover:text-[#01c4e7] hover:scale-110">
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="hover:text-[#01c4e7] hover:scale-110">
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="hover:text-[#01c4e7] hover:scale-110">
-          <Link to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className="hover:text-[#01c4e7] hover:scale-110">
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+      <ul className="hidden md:flex p-8">
+        <Link to="home" smooth={true} duration={500}>
+          <li className="hover:text-[#01c4e7] hover:scale-110">Home</li>
+        </Link>
+        <Link to="about" smooth={true} duration={500}>
+          <li className="hover:text-[#01c4e7] hover:scale-110">About</li>
+        </Link>
+        <Link to="skills" smooth={true} duration={500}>
+          <li className="hover:text-[#01c4e7] hover:scale-110">Skills</li>
+        </Link>
+        <Link to="work" smooth={true} duration={500}>
+          <li className="hover:text-[#01c4e7] hover:scale-110">Work</li>
+        </Link>
+        <Link to="contact" smooth={true} duration={500}>
+          <li className="hover:text-[#01c4e7] hover:scale-110">Contact</li>
+        </Link>
       </ul>
 
       {/* Hamburguer */}
@@ -72,62 +61,105 @@ const Navbar = () => {
             : "absolute top-20 w-full bg-white/10 backdrop-blur-2xl rounded flex flex-col justify-center items-center"
         }
       >
-        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
-          <Link onClick={handClick} to="home" smooth={true} duration={500}>
+        <Link
+          className="w-full"
+          onClick={handClick}
+          to="home"
+          smooth={true}
+          duration={500}
+        >
+          <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
             Home
-          </Link>
-        </li>
-        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
-          <Link onClick={handClick} to="about" smooth={true} duration={500}>
+          </li>
+        </Link>
+        <Link
+          className="w-full"
+          onClick={handClick}
+          to="about"
+          smooth={true}
+          duration={500}
+        >
+          <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
             About
-          </Link>
-        </li>
-        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
-          <Link onClick={handClick} to="skills" smooth={true} duration={500}>
+          </li>
+        </Link>
+        <Link
+          className="w-full"
+          onClick={handClick}
+          to="skills"
+          smooth={true}
+          duration={500}
+        >
+          <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
             Skills
-          </Link>
-        </li>
-        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
-          <Link onClick={handClick} to="work" smooth={true} duration={500}>
+          </li>
+        </Link>
+        <Link
+          className="w-full"
+          onClick={handClick}
+          to="work"
+          smooth={true}
+          duration={500}
+        >
+          <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
             Work
-          </Link>
-        </li>
-        <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
-          <Link onClick={handClick} to="contact" smooth={true} duration={500}>
+          </li>
+        </Link>
+        <Link
+          className="w-full"
+          onClick={handClick}
+          to="contact"
+          smooth={true}
+          duration={500}
+        >
+          <li className="py-2 w-full text-center hover:bg-white/20 backdrop-blur-2xl">
             Contact
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
-        
+
       {/* Social icons */}
-      <div className="fixed w-full bottom-2 lg:bottom-8 overflow-hidden z-50">
+      <div className="fixed w-full bottom-2 lg:bottom-4 overflow-hidden z-50">
         <div className="container mx-auto">
-          <div className="w-full bg-white/20 h-[56px] backdrop-blur-2xl rounded-full max-w-[260px]
-          mx-auto px-3 flex justify-between items-center text-2xl text-[#01c4e7]">
-            <a href="https://www.linkedin.com/in/joaquin-abuin-31940092/">
-              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
-                <FaLinkedin size={30} />
-              </Link>
+          <div
+            className="w-full bg-white/20 h-[56px] backdrop-blur-2xl rounded-full max-w-[260px]
+          mx-auto px-8 flex justify-between items-center text-2xl text-[#efefef]"
+          >
+            <a
+              className="hover:text-[#01c4e7]"
+              href="https://www.linkedin.com/in/joaquin-abuin-31940092/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={30} />
             </a>
-            <a href="https://github.com/JoaqAb">
-              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
-                <FaGithub size={30} />
-              </Link>
+            <a
+              className="hover:text-[#01c4e7]"
+              href="https://github.com/JoaqAb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={30} />
             </a>
-            <a href="/">
-              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
-                <HiOutlineMail size={30} />
-              </Link>
+            <a
+              className="hover:text-[#01c4e7]"
+              href="mailto:joaquinabuin@gmail"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <HiOutlineMail size={30} />
             </a>
-            <a href="/">
-              <Link className="cursor-pointer w-[60px] h-[56px] flex items-center justify-center">
-                <BsFillPersonLinesFill size={30} />
-              </Link>
+            <a
+              className="hover:text-[#01c4e7]"
+              href="https://www.youtube.com/watch?v=zL19uMsnpSU"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsFillPersonLinesFill size={30} />
             </a>
           </div>
         </div>
       </div>
-
     </div>
   );
 };

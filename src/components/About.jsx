@@ -1,56 +1,52 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { fadeIn } from "../variants";
 import Profile from "../assets/joa_pic.webp";
 import "animate.css";
 
 const About = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.3,
-  });
 
   return (
     <Element
       name="about"
-      className="md:w-full h-screen bg-[#000020] text-[#efefef] overflow-hidden"
+      className="md:w-full min-h-screen bg-[#000020] text-[#efefef] flex flex-col justify-center items-center overflow-hidden"
     >
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] p-4 grid grid-cols-2 gap-8 w-full md:w-4/5">
           <motion.div
-            ref={ref}
-            initial={{ opacity: 0 }}
-            animate={inView ? { opacity: 1 } : { opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.3}}
             className="pb-8"
           >
-            <p className="text-4xl font-bold inline border-b-4 border-[#01c4e7]">
+            <p className="text-4xl font-bold inline text-[#01c4e7]">
               About
             </p>
           </motion.div>
 
-          <div></div>
         </div>
 
         <div className="max-w-[1000px] w-full md:w-4/5 grid sm:grid-cols-2 gap-8 px-4">
           <motion.div
-            ref={ref}
-            initial={{ opacity: 0, x: -50 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-            transition={{ duration: 0.5 }}
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.3}}
             className="flex justify-center items-center"
           >
             <img
-              className="w-80 rounded-full border-4 border-[#01c4e7]"
+              className="w-60 max-w-80 rounded-full border-4 border-[#efefef]"
               src={Profile}
               alt=""
             />
           </motion.div>
           <motion.div
-            ref={ref}
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.5 }}
+            variants={fadeIn('left', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.3}}
           >
             <p>
               "Hello! I'm a web developer based in Argentina with a strong
@@ -64,6 +60,7 @@ const About = () => {
             </p>
           </motion.div>
         </div>
+        
       </div>
     </Element>
   );
