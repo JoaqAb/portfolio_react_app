@@ -10,6 +10,7 @@ const Home = () => {
   const [showFirstSection, setShowFirstSection] = useState(false);
   const [showSecondSection, setShowSecondSection] = useState(false);
   const [showThirdSection, setShowThirdSection] = useState(false);
+  const [animationsLoaded, setAnimationsLoaded] = useState(false);
 
   const handleSecondTypingDone = () => {
     setShowThirdSection(true);
@@ -28,10 +29,15 @@ const Home = () => {
       setShowThirdSection(true);
     }, 4000);
 
+    const animationsLoadedTimeout = setTimeout(() => {
+      setAnimationsLoaded(true);
+    }, 7000);
+
     return () => {
       clearTimeout(firstSectionTimeout);
       clearTimeout(secondSectionTimeout);
       clearTimeout(thirdSectionTimeout);
+      clearTimeout(animationsLoadedTimeout);
     };
   }, []);
 
@@ -71,7 +77,7 @@ const Home = () => {
               variants={fadeIn("up", 5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              animate={animationsLoaded ? "show" : "hidden"}
               className="text-[#8c8c8c] py-4 max-w-[700px]"
             >
               Welcome to my world of web development. I'm a passionate
@@ -86,7 +92,7 @@ const Home = () => {
             variants={fadeIn("left", 6)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            animate={animationsLoaded ? "show" : "hidden"}
             className="items-start w-full"
           >
             <p className="w-full px-2 mx-auto flex items-start text-[#efefef]">
@@ -97,7 +103,7 @@ const Home = () => {
             variants={fadeIn("left", 6)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            animate={animationsLoaded ? "show" : "hidden"}
             className="w-full h-auto rounded-md p-2 flex flex-col justify-around gap-4"
           >
             {/* Linkedin */}
@@ -105,7 +111,7 @@ const Home = () => {
               variants={fadeIn("left", 6.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              animate={animationsLoaded ? "show" : "hidden"}
               className="group"
             >
               <li className="w-full h-[46px] px-8 flex border-4 border-[#01c4e7] justify-between items-center bg-[#000020] rounded-md group-hover:scale-110 transition-all duration-500">
@@ -127,7 +133,7 @@ const Home = () => {
               variants={fadeIn("left", 6.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              animate={animationsLoaded ? "show" : "hidden"}
               className="group"
             >
               <li className="w-full h-[46px] px-8 flex border-4 border-[#01c4e7] justify-between items-center bg-[#000020] rounded-md group-hover:scale-110 transition-all duration-500">
@@ -149,7 +155,7 @@ const Home = () => {
               variants={fadeIn("left", 6.9)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              animate={animationsLoaded ? "show" : "hidden"}
               className="group"
             >
               <li className="w-full h-[46px] px-8 flex border-4 border-[#01c4e7] justify-between items-center bg-[#000020] rounded-md group-hover:scale-110 transition-all duration-500">
@@ -171,7 +177,7 @@ const Home = () => {
               variants={fadeIn("left", 7.2)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
+              animate={animationsLoaded ? "show" : "hidden"}
               className="group"
             >
               <li className="w-full h-[46px] px-8 flex border-4 border-[#01c4e7] justify-between items-center bg-[#000020] rounded-md group-hover:scale-110 transition-all duration-500">
