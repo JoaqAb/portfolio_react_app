@@ -143,7 +143,7 @@ const Navbar = () => {
             </a>
             <a
               className="hover:text-[#01c4e7]"
-              href="mailto:joaquinabuin@gmail"
+              href="mailto:joaquinabuin@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -151,7 +151,7 @@ const Navbar = () => {
             </a>
             <a
               className="hover:text-[#01c4e7]"
-              href="https://www.youtube.com/watch?v=zL19uMsnpSU"
+              href="https://drive.google.com/file/d/1rVmRjJ9VKCySXb9ALWQroQ0Q6EVtpHpr/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

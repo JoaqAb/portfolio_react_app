@@ -161,7 +161,7 @@ const Home = () => {
               <li className="w-full h-[46px] px-8 flex border-4 border-[#01c4e7] justify-between items-center bg-[#000020] rounded-md group-hover:scale-110 transition-all duration-500">
                 <a
                   className="flex justify-between items-center w-full text-[#8c8c8c] hover:text-[#01c4e7]"
-                  href="mailto:joaquinabuin@gmail"
+                  href="mailto:joaquinabuin@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -183,7 +183,7 @@ const Home = () => {
               <li className="w-full h-[46px] px-8 flex border-4 border-[#01c4e7] justify-between items-center bg-[#000020] rounded-md group-hover:scale-110 transition-all duration-500">
                 <a
                   className="flex justify-between items-center w-full text-[#8c8c8c] hover:text-[#01c4e7]"
-                  href="https://www.youtube.com/watch?v=zL19uMsnpSU"
+                  href="https://drive.google.com/file/d/1rVmRjJ9VKCySXb9ALWQroQ0Q6EVtpHpr/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
