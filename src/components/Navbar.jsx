@@ -126,7 +126,7 @@ const Navbar = () => {
           mx-auto px-8 flex justify-between items-center text-2xl text-[#efefef]"
           >
             <a
-              className="hover:text-[#01c4e7]"
+              className="hover:text-[#01c4e7] hover:scale-110 transition-all duration-500"
               href="https://www.linkedin.com/in/joaquin-abuin-31940092/"
               target="_blank"
               rel="noopener noreferrer"
@@ -134,7 +134,7 @@ const Navbar = () => {
               <FaLinkedin size={30} />
             </a>
             <a
-              className="hover:text-[#01c4e7]"
+              className="hover:text-[#01c4e7] hover:scale-110 transition-all duration-500"
               href="https://github.com/JoaqAb"
               target="_blank"
               rel="noopener noreferrer"
@@ -142,7 +142,7 @@ const Navbar = () => {
               <FaGithub size={30} />
             </a>
             <a
-              className="hover:text-[#01c4e7]"
+              className="hover:text-[#01c4e7] hover:scale-110 transition-all duration-500"
               href="mailto:joaquinabuin@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -150,7 +150,7 @@ const Navbar = () => {
               <HiOutlineMail size={30} />
             </a>
             <a
-              className="hover:text-[#01c4e7]"
+              className="hover:text-[#01c4e7] hover:scale-110 transition-all duration-500"
               href="https://drive.google.com/file/d/1rVmRjJ9VKCySXb9ALWQroQ0Q6EVtpHpr/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"

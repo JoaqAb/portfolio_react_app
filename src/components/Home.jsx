@@ -59,7 +59,7 @@ const Home = () => {
             <TypeAnimation
               className="text-4xl mb-4 sm:text-7xl font-bold text-[#01c4e7]"
               speed={5}
-              sequence={["Joaquin Abuin"]}
+              sequence={["Joaquín Abuin"]}
               cursor={false}
               onTypingDone={handleSecondTypingDone}
               typingInterval={1000}
