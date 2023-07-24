@@ -30,19 +30,19 @@ const Contact = () => {
               className="flex justify-center items-center border rounded-md p-4 lg:ml-16 flex-col w-full"
             >
               <input
-                className="p-2 bg-[#ffffff] w-full max-w-[500px] rounded-md"
+                className="p-2 bg-[#ffffff] w-full max-w-[500px] rounded-md text-black"
                 type="text"
                 placeholder="Name"
                 name="name"
               />
               <input
-                className="my-4 p-2 bg-[#ffffff] w-full max-w-[500px] rounded-md"
+                className="my-4 p-2 bg-[#ffffff] w-full max-w-[500px] rounded-md text-black"
                 type="emial"
                 placeholder="Email"
                 name="email"
               />
               <textarea
-                className="p-2 bg-[#ffffff] w-full max-w-[500px] rounded-md"
+                className="p-2 bg-[#ffffff] w-full max-w-[500px] rounded-md text-black"
                 name="message"
                 rows="10"
                 placeholder="Message"
