@@ -13,7 +13,7 @@ const Contact = () => {
               variants={fadeIn('right', 0.3)}
               initial='hidden'
               whileInView={'show'}
-              viewport={{once: false, amount: 0.3}} >
+              viewport={{once: true, amount: 0.3}} >
                 <p className="text-4xl font-bold inline text-[#01c4e7]">
                   Let's work <br /> together!
                 </p>                
@@ -24,7 +24,7 @@ const Contact = () => {
             variants={fadeIn('left', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: false, amount: 0.3}}
+            viewport={{once: true, amount: 0.3}}
               method="post"
               action="https://getform.io/f/169c0493-d903-4484-a133-e7af93af7205"
               className="flex justify-center items-center border rounded-md p-4 lg:ml-16 flex-col w-full"

@@ -20,7 +20,7 @@ const Skills = () => {
           variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <p className="text-4xl font-bold inline text-[#01c4e7]">Skills</p>
           <p className="py-4">These are the technologies I've worked with</p>
@@ -30,7 +30,7 @@ const Skills = () => {
         variants={fadeIn("up", 1.0)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
         className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
           <div 
           className="pt-4 hover:scale-125 transition-all duration-500">

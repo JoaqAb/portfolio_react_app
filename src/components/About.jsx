@@ -18,7 +18,7 @@ const About = () => {
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: false, amount: 0.3}}
+            viewport={{once: true, amount: 0.3}}
             className="pb-8"
           >
             <p className="text-4xl font-bold inline text-[#01c4e7]">
@@ -33,7 +33,7 @@ const About = () => {
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: false, amount: 0.3}}
+            viewport={{once: true, amount: 0.3}}
             className="flex justify-center items-center"
           >
             <img
@@ -46,7 +46,7 @@ const About = () => {
             variants={fadeIn('left', 0.3)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once: false, amount: 0.3}}
+            viewport={{once: true, amount: 0.3}}
           >
             <p>
               "Hello! I'm a web developer based in Argentina with a strong
