@@ -70,12 +70,12 @@ const Works = () => {
               className="grid grid-cols-2 gap-4 absolute -bottom-full left-12
               group-hover:bottom-1 transition-all duration-500 z-20"
             >
-              <a href="https://1kmmas.netlify.app/" target="_blank">
+              <a href="https://1kmmas.netlify.app/" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Demo
               </button>
               </a>
-              <a href="https://github.com/JoaqAb/team_strongers_ecommerce" target="_blank">
+              <a href="https://github.com/JoaqAb/team_strongers_ecommerce" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Code
               </button>
@@ -125,12 +125,12 @@ const Works = () => {
               className="grid grid-cols-2 gap-4 absolute -bottom-full left-12
               group-hover:bottom-1 transition-all duration-500 z-20"
             >
-              <a href="https://joaquinfirstpersonal.netlify.app/" target="_blank">
+              <a href="https://joaquinfirstpersonal.netlify.app/" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Demo
               </button>
               </a>
-              <a href="https://github.com/JoaqAb/my_website" target="_blank">
+              <a href="https://github.com/JoaqAb/my_website" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Code
               </button>
@@ -180,12 +180,12 @@ const Works = () => {
               className="grid grid-cols-2 gap-4 absolute -bottom-full left-12
               group-hover:bottom-1 transition-all duration-500 z-20"
             >
-              <a href="https://joaquinabuin.netlify.app/" target="_blank">
+              <a href="https://joaquinabuin.netlify.app/" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Demo
               </button>
               </a>
-              <a href="https://github.com/JoaqAb/portfolio_react_app" target="_blank">
+              <a href="https://github.com/JoaqAb/portfolio_react_app" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Code
               </button>
@@ -235,12 +235,12 @@ const Works = () => {
               className="grid grid-cols-2 gap-4 absolute -bottom-full left-12
               group-hover:bottom-1 transition-all duration-500 z-20"
             >
-              <a href="https://musicflow.netlify.app/" target="_blank">
+              <a href="https://musicflow.netlify.app/" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Demo
               </button>
               </a>
-              <a href="https://github.com/JoaqAb/MusicFlow" target="_blank">
+              <a href="https://github.com/JoaqAb/MusicFlow" target="_blank" rel="noopener noreferrer">
               <button className="text-[#efefef] border-2 hover:bg-[#01c4e7] hover:border-[#01c4e7] px-8 mt-4 mx-auto flex items-center rounded-md">
                 Code
               </button>
