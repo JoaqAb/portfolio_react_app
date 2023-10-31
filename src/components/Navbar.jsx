@@ -151,7 +151,7 @@ const Navbar = () => {
             </a>
             <a
               className="hover:text-[#01c4e7] hover:scale-110 transition-all duration-500"
-              href="https://drive.google.com/file/d/1rVmRjJ9VKCySXb9ALWQroQ0Q6EVtpHpr/view?usp=sharing"
+              href="https://drive.google.com/file/d/1YnJlIdVK3hpZaFyNt5kAob6YKVE1veSi/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
